@@ -8,12 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol PlayerCellDelegate
+@optional
+- (void)startButtonPressed:(id)sender;
+@end
+
 @interface PlayerCell : UITableViewCell
 
+@property (strong, nonatomic) id delegate;
 @property (weak, nonatomic) IBOutlet UITextField *playerNameTextField;
 @property (weak, nonatomic) IBOutlet UIButton *startButton;
 @property (weak, nonatomic) IBOutlet UILabel *timeRemainingLabel;
-
-- (IBAction)playerStartButtonPressed:(id)sender;
+- (IBAction)start:(id)sender;
 
 @end

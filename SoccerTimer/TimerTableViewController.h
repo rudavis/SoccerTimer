@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PlayerCell.h"
 
-@interface TimerTableViewController : UITableViewController
+@interface TimerTableViewController : UITableViewController <PlayerCellDelegate>
 
 @property (nonatomic, strong) NSMutableArray *players;
-
 
 - (IBAction)startAllButtonPressed:(id)sender;
 - (IBAction)addPlayerButtonPressed:(id)sender;

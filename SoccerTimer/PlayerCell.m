@@ -26,12 +26,13 @@
     // Configure the view for the selected state
 }
 
-- (IBAction)playerStartButtonPressed:(id)sender {
+- (IBAction)start:(id)sender {
     if ([_startButton.titleLabel.text isEqualToString: @"Start"]) {
-        _startButton.titleLabel.text = @"Pause";
-    } else {
-        _startButton.titleLabel.text = @"Start";
+        [_startButton setTitle:@"Pause" forState:UIControlStateNormal];
+        } else {
+            [_startButton setTitle:@"Start" forState:UIControlStateNormal];
     }
-    
+    [self.delegate startButtonPressed:self];
+
 }
 @end
