@@ -83,5 +83,21 @@
 }
 
 - (IBAction)addPlayerButtonPressed:(id)sender {
+    NSInteger numPlayers = [self.players count];
+    numPlayers = numPlayers + 1;
+    
+    Player *player = [[Player alloc] init];
+    player.name = [NSString stringWithFormat:@"Player %i", numPlayers];
+    player.timerRunning = NO;
+    player.timerDefault = 3;
+    player.secRemaining = 0;
+    player.minRemaining = 0;
+    
+    [self.players addObject:player];
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:(numPlayers - 1) inSection:0];
+    [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+
 }
+
+
 @end
