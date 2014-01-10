@@ -14,13 +14,15 @@
 		C7039294187DF0930025B785 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C7039293187DF0930025B785 /* main.m */; };
 		C7039298187DF0940025B785 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7039297187DF0940025B785 /* AppDelegate.m */; };
 		C703929B187DF0940025B785 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7039299187DF0940025B785 /* Main.storyboard */; };
-		C703929E187DF0940025B785 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C703929D187DF0940025B785 /* ViewController.m */; };
 		C70392A0187DF0940025B785 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C703929F187DF0940025B785 /* Images.xcassets */; };
 		C70392A7187DF0940025B785 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C70392A6187DF0940025B785 /* XCTest.framework */; };
 		C70392A8187DF0940025B785 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7039287187DF0930025B785 /* Foundation.framework */; };
 		C70392A9187DF0940025B785 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C703928B187DF0930025B785 /* UIKit.framework */; };
 		C70392B1187DF0940025B785 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C70392AF187DF0940025B785 /* InfoPlist.strings */; };
 		C70392B3187DF0940025B785 /* SoccerTimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C70392B2187DF0940025B785 /* SoccerTimerTests.m */; };
+		C70392BE187DF0F60025B785 /* TimerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C70392BD187DF0F60025B785 /* TimerTableViewController.m */; };
+		C70392C118803EF40025B785 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = C70392C018803EF40025B785 /* Player.m */; };
+		C70392C41880432D0025B785 /* PlayerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C70392C31880432D0025B785 /* PlayerCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +47,18 @@
 		C7039296187DF0940025B785 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C7039297187DF0940025B785 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C703929A187DF0940025B785 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C703929C187DF0940025B785 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C703929D187DF0940025B785 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C703929F187DF0940025B785 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C70392A5187DF0940025B785 /* SoccerTimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoccerTimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C70392A6187DF0940025B785 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		C70392AE187DF0940025B785 /* SoccerTimerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SoccerTimerTests-Info.plist"; sourceTree = "<group>"; };
 		C70392B0187DF0940025B785 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C70392B2187DF0940025B785 /* SoccerTimerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SoccerTimerTests.m; sourceTree = "<group>"; };
+		C70392BC187DF0F60025B785 /* TimerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerTableViewController.h; sourceTree = "<group>"; };
+		C70392BD187DF0F60025B785 /* TimerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerTableViewController.m; sourceTree = "<group>"; };
+		C70392BF18803EF40025B785 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		C70392C018803EF40025B785 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		C70392C21880432D0025B785 /* PlayerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerCell.h; sourceTree = "<group>"; };
+		C70392C31880432D0025B785 /* PlayerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +121,12 @@
 				C7039296187DF0940025B785 /* AppDelegate.h */,
 				C7039297187DF0940025B785 /* AppDelegate.m */,
 				C7039299187DF0940025B785 /* Main.storyboard */,
-				C703929C187DF0940025B785 /* ViewController.h */,
-				C703929D187DF0940025B785 /* ViewController.m */,
+				C70392C21880432D0025B785 /* PlayerCell.h */,
+				C70392C31880432D0025B785 /* PlayerCell.m */,
+				C70392BC187DF0F60025B785 /* TimerTableViewController.h */,
+				C70392BD187DF0F60025B785 /* TimerTableViewController.m */,
+				C70392BF18803EF40025B785 /* Player.h */,
+				C70392C018803EF40025B785 /* Player.m */,
 				C703929F187DF0940025B785 /* Images.xcassets */,
 				C703928E187DF0930025B785 /* Supporting Files */,
 			);
@@ -249,8 +259,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C703929E187DF0940025B785 /* ViewController.m in Sources */,
+				C70392C118803EF40025B785 /* Player.m in Sources */,
+				C70392BE187DF0F60025B785 /* TimerTableViewController.m in Sources */,
 				C7039298187DF0940025B785 /* AppDelegate.m in Sources */,
+				C70392C41880432D0025B785 /* PlayerCell.m in Sources */,
 				C7039294187DF0930025B785 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

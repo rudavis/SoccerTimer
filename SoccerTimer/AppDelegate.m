@@ -7,12 +7,48 @@
 //
 
 #import "AppDelegate.h"
+#import "Player.h"
+#import "TimerTableViewController.h"
 
 @implementation AppDelegate
+{
+    NSMutableArray *_players;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    _players = [NSMutableArray arrayWithCapacity:3];
+    
+    Player *player = [[Player alloc]init];
+    player.name = @"Player 1";
+    player.timerRunning = NO;
+    player.timerDefault = 3;
+    player.secRemaining = 0;
+    player.minRemaining = 0;
+    [_players addObject:player];
+    
+    player = [[Player alloc]init];
+    player.name = @"Player 2";
+    player.timerRunning = NO;
+    player.timerDefault = 3;
+    player.secRemaining = 0;
+    player.minRemaining = 0;
+    [_players addObject:player];
+    
+    player = [[Player alloc]init];
+    player.name = @"Player 3";
+    player.timerRunning = NO;
+    player.timerDefault = 3;
+    player.secRemaining = 0;
+    player.minRemaining = 0;
+    [_players addObject:player];
+    
+    UINavigationController *navController = (UINavigationController *) self.window.rootViewController;
+    TimerTableViewController *timerViewController = [navController viewControllers][0];
+    timerViewController.players = _players;
+    
+    
     return YES;
 }
 							
